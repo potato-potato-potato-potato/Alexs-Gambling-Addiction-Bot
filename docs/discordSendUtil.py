@@ -19,3 +19,10 @@ async def prompt(client, ctx, valid_answers, question_to_prompt, str=False):
     if str:
         return response.content.lower()
     return response
+
+
+def combine_strings(*args):
+    string = ''
+    for i in args:
+        string += i
+    return string

@@ -27,6 +27,14 @@ async def BlackJack(ctx):
 async def Slots():
     pass
 
+"""
+# Only implement if using client.event()
+def check_for_post_prefix(ctx):
+    msg = ctx.message.content
+    if msg[len(msg)-2:len(msg)-1] == postPrefix:
+        return True
+    return False
+"""
 
 
 
