@@ -1,5 +1,5 @@
 
-async def prompt(ctx, valid_answers, question_to_prompt, client, str=False):
+async def prompt(client, ctx, valid_answers, question_to_prompt, str=False):
     """
     Prompts the user with a question, with some inputs, and returns the users input.
 
