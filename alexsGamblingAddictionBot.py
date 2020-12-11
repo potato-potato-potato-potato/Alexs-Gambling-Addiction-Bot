@@ -1,6 +1,7 @@
 # Imports
 import os
 
+from docs import black_jack
 from discord.ext import commands
 from dotenv import load_dotenv
 
@@ -19,7 +20,7 @@ async def on_ready():
 
 @client.command(help='- Lets you play blackjack')
 async def BlackJack(ctx):
-    pass
+    await black_jack(ctx, client)
 
 
 @client.command()
