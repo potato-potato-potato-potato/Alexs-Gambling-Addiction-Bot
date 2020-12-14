@@ -1,6 +1,7 @@
 # Imports
 import os
 
+from docs import add_money
 from docs import black_jack
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -11,7 +12,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 client = commands.Bot(command_prefix='$$')
 postPrefix = '$$'
 
-
+dataFile = os.getenv('DATA_FILE_PATH')
 
 @client.event
 async def on_ready():
@@ -22,6 +23,9 @@ async def on_ready():
 async def BlackJack(ctx):
     await black_jack(ctx, client)
 
+@client.command(help='- adds money to a specific player')
+async def add_money():
+    pass
 
 @client.command()
 async def Slots():
